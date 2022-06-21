@@ -9,32 +9,49 @@
 
 
 /* basic elements */
+* {
+	box-sizing: border-box;
+}
+
 html {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 	}
 body { 
 	font: 75% georgia, sans-serif;
 	line-height: 1.88889;
 	color: #555753; 
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
 	margin: 0; 
 	padding: 0;
 	}
 p { 
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: black;
+	font-size: 1.2rem;
 	margin-top: 0; 
 	text-align: justify;
 	}
-h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
+h1 {
+	margin: 0;
+}
+h2 {
+	margin: 0;
+}
+
+h3{
+	position: relative;
+	text-align: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-style: italic;
+	font-size: 2rem;
+	color: black;
+}
+
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #B7A5DF;
+	color: rgb(181, 36, 36);
 	}
 a:visited { 
 	font-weight: bold; 
@@ -52,143 +69,233 @@ abbr {
 
 /* specific divs */
 .page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
+	background-color: lavenderblush;
+	padding: 0;
 	margin: 0; 
 	position: relative;
 	}
 
 .intro { 
-	min-width: 470px;
-	width: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background-color: rgb(59, 56, 56);
+	width: 90%;		
+	height: 48rem;
+	top: 3rem;
+	left: 10%;
+	order: 1;
 	}
 
 header h1 { 
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+	padding: 10px 25px 10px 25px; 
+	position: relative;
+	background-color: rgb(253, 219, 67);
+	font-family: serif 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 40px;
+	color: black;
+	top: 2rem;
+	left: 75rem;
+	display: inline-block;
 	}
-header h2 { 
-	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
-
-	text-indent: 100%;
+header h2 {
+	position: relative; 
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-style: italic;
+	font-size: 108px;
+	text-align: center;
+	color: #FFFF;
 	white-space: nowrap;
-	overflow: hidden;
+	top: 1.5rem;
+	left: 15rem;	
 	}
 header {
-	padding-top: 20px;
-	height: 87px;
+	position: relative;
+	top: 2rem;
+	height: 36rem;
+	width: 80%;
 }
 
 .summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
+	position: absolute;
+	clear: both; 	
+	color: #FFFF;
+	width: 75%;
+	top: 23rem;
+	left: 25rem; 		
 	}
-.summary p {
-	font: italic 1.1em/2.2 georgia; 
-	text-align: center;
-	}
+
+.summary p{
+	color: #FFFF;
+}
 
 .preamble {
+	background-color: lightskyblue;
+	color: #FFFF;
+	position: absolute;
 	clear: right; 
-	padding: 0px 10px 0 10px;
+	padding: 0px 20px 0 20px;
+	text-align: center;
+	height: 30rem;
+	width: 111.5%;
+	top: 38rem;
+	left: -12rem;
 	}
-.supporting {	
+.preamble p {
+	position: relative;
+	top: 4rem;
+}
+
+.preamble h3 {
+	margin: 0;
+	position: relative;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-style: italic;
+	font-size: 4rem;
+	color: black;
+	top: 2rem;
+}
+
+.supporting{
+	background-color: lavenderblush;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	top: 21rem;
+	order: 2;
+}
+.explanation {	
+	position: relative;
+	background-color: rgb(145, 225, 197);
+	padding: 0px 30px 0 30px;
+	width: 20%;
+	height: 77.8rem;
 	padding-left: 10px; 
-	margin-bottom: 40px;
+	left: 92rem;
 	}
 
+.participation {
+	position: relative;
+	background-color:rgb(145, 225, 197);
+	padding: 0px 30px 0 30px;
+	width: 20%;
+	padding-left: 10px; 
+	height: 77.8rem;
+	left: 43.7rem;
+}
+
+.benefits {
+	position: relative;
+	background-color: rgb(145, 225, 197);
+	padding: 0px 30px 0 30px;
+	width: 50.5%;
+	padding-left: 10px; 
+	height: 20rem;
+	right: 39%;
+}
+
+.requirements{
+	position: absolute;
+	background-color: rgb(145, 225, 197);
+	padding: 0px 30px 0 30px;
+	width: 50.6%;
+	padding-left: 10px; 
+	height: auto;
+	right: 48.5%;
+	top: 21rem;
+}
 footer { 
+	background-color: rgb(59, 56, 56);
+	position: absolute;
+	display: flex;
 	text-align: center; 
+	top: 77rem;
+	height: 6rem;
+	right: 0%;
+	width: 100%;
+	order: 3;
 	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
+footer a:link, footer a:visited {
+	position: relative; 
+	left: 8%;
+	font-family: serif 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 2rem;
+	color: rgb(253, 219, 67);
+	margin-top: 1.3rem;
+	margin-right: 18rem; 
 	}
 
 .sidebar {
-	margin-left: 600px; 
 	position: absolute; 
-	top: 0; 
-	right: 0;
+	bottom: 67.4%; 
+	right: 87%;
 	}
 .sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
+	background: rgb(253, 219, 67);;
+	font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	padding: 15px 15px 15px 25px; 
 	margin-top: 150px; 
-	width: 130px; 
+	font-size: 11px;
 	}
+.wrapper{
+	width: 85%;
+	height: 38.1rem;
+	padding: 5px;
+}
+
 .sidebar h3.select { 
-	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; 
-	margin: 10px 0 5px 0; 
+	font-size: 12px;
+	margin: 10px 0 10px 0; 
 	width: 97px; 
 	height: 16px; 
 
-	text-indent: 100%;
+	text-indent: 0%;
 	white-space: nowrap;
-	overflow: hidden;
 	}
 .sidebar h3.archives { 
-	background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
+	font-size: 12px;
+	margin: 25px 0 15px 0; 
+	width: 57px; 
 	height: 14px; 
 
-	text-indent: 100%;
+	text-indent: 0%;
 	white-space: nowrap;
-	overflow: hidden;
 	}
 .sidebar h3.resources { 
-	background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
+	font-size: 12px;
+	margin: 25px 0 20px 0; 
+	width: 63px; 
 	height: 10px; 
 
-	text-indent: 100%;
+	text-indent: 0%;
 	white-space: nowrap;
-	overflow: hidden;
 	}
-
 
 .sidebar ul {
 	margin: 0;
 	padding: 0;
+	background: transparent url(./img/linea_negra.jpg) no-repeat top center; 
 	}
 .sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
+	line-height: 1.6em; 
 	display: block; 
 	padding-top: 5px; 
-	margin-bottom: 5px;
+	margin-bottom: px;
 	list-style-type: none;
 	}
 .sidebar li a:link {
-	color: #988F5E;
+	color: #4b4a42;
 	}
 .sidebar li a:visited {
-	color: #B3AE94;
+	color: #a75708;
 	}
 
 
 .extra1 {
-	background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; 
 	position: absolute; 
 	top: 40px; 
 	right: 0; 
 	width: 148px; 
 	height: 110px;
 	}
+
