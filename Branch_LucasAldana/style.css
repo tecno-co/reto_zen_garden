@@ -1,0 +1,316 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+html {
+	margin: 0px;
+	padding: 0;
+	}
+
+body { 
+	font: 80% serif, monospace;
+	line-height: 2;
+	color: #000000; /* Font color without links */
+	background: #FF9503 no-repeat bottom right;
+	/* Lower right corner image */
+	margin: 0;
+	}
+
+/* Paragraph */
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 0; 
+	text-align: justify;
+	}
+
+/* Title - CSS Zen Garden */
+h1 { 
+	font-family: Helvetica;
+	font-size: 45px;
+	margin-top: -215px;
+	text-align: center;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #231c1c;
+	}
+
+/* Title - The Beauty of CSS Design */
+h2 {
+	font-family: Helvetica;
+	font-size: 45px;
+	margin-top: -32px;
+	text-align: center;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #231c1c;
+	}
+
+/* All Titles */
+h3 {
+	font-family: Helvetica;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #912802;
+	}
+
+/* hyperlinked letters */
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #ebc098;
+	}
+
+/* Hyperlinked letters after clicking */
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #E00B07;
+	}
+
+/* Hyperlinked letters on hover */
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #912802;
+	}
+
+/* Don't touch */
+abbr {
+	border-bottom: none;
+	}
+
+
+/* specific divs */
+.page-wrapper { 
+	padding: 1000;  
+	margin: 1000; 
+	position: relative;
+	}
+
+/* Parcial - "The Road to Enlightenment" */
+.intro { 
+	position: relative;
+	width: 100%;
+	}
+
+/* Asset: Title - Tunel_Naranja */
+header {
+	background: url(./assets/Header_OP1_A.png);
+	padding-top: 300px;
+	height: 100%;
+	width: 1423px;
+}
+
+/* So What is This About? */
+.explanation{	
+	position: relative;
+	font-family: Helvetica;
+	width: 350px; 
+	top: -15px;
+	}
+
+/* Participation */
+.participation{	
+	position: relative;
+	font-family: Helvetica;
+	padding: 50px 30px 50px 400px;
+	width: 350px;
+	top: -469px;
+	}
+
+/* Benefits */
+.benefits{
+	position: relative;
+	font-family: Helvetica;
+	padding: 1px 10px 10px 812px;
+	width: 350px;
+	top: -1038px;
+	}
+
+/* Requirements */
+.requirements{	
+	position: relative;
+	font-family: Helvetica;
+	width: 1162px;
+	top: -270px;
+	}
+
+/* To download */
+.summary {
+	clear: both;
+	font-family: Helvetica;
+	line-height: 30px;
+	margin: 35px 20px -230px 800px; 
+	width: 600px; 
+	}
+
+/* Sangría To download */
+.summary p {
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+	padding: 50px 10px 10px 180px;
+		}
+
+/* Sangría of "The Road..." */
+.preamble {
+	clear: left; 
+	padding: 0px 504px 10px 170px;
+	}
+
+/* All Doc - Sangría */
+.supporting {	
+	padding-left: 170px; 
+	margin-bottom: 40px;
+	}
+
+/* Lit Footer HTML CSS CC ALLY GitHub*/
+footer { 
+	position: relative;
+	text-align: center;
+	top: -250px;
+	}
+
+/* Lit Footer HTML CSS CC ALLY GitHub*/
+footer a:link, footer a:visited { 
+	margin-right: 200px;
+	}
+
+/* Position "Other designs" */	
+.sidebar {
+	margin-left: 600px; 
+	position: absolute; 
+	top: 150px; 
+	left: -600px;
+	}
+
+/* "Other designs" */
+.sidebar .wrapper {
+	font-family: Helvetica; 
+	font: 10px;
+	background: transparent url(./assets/Other_Dsgns.png) top left repeat-y; 
+	padding: 10px; 
+	margin-top: 150px; 
+	width: 130px; 
+	}
+
+/* Image of "Select a Design" - From the other designs */
+.sidebar h3.select {
+
+	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; 
+	margin: 10px 0 5px 0; 
+	width: 97px; 
+	height: 16px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+
+/* Image from "archives" - Of the other designs */
+.sidebar h3.archives { 
+	background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left; 
+	margin: 25px 0 5px 0; 
+	width:57px; 
+	height: 14px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+
+/* Image of "resources" - Of the other designs */
+.sidebar h3.resources { 
+	background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left; 
+	margin: 25px 0 5px 0; 
+	width:63px; 
+	height: 10px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+
+/* Sangría - internal other designs */
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	}
+
+/* Bar that separates the other designs */
+.sidebar li {
+	line-height: 1.3em; 
+	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+
+
+.sidebar li a:link {
+	color: #ef6d06;
+	}
+
+
+.sidebar li a:visited {
+	color: #000000;
+	}
+
+/* Top left corner image */
+.extra1 {
+	background: transparent url(./assets/Dark.png) top left no-repeat; 
+	position: absolute; 
+	top: 190px; 
+	left: 2px; 
+	width: 148px; 
+	height: 110px;	
+	}
+
+/* Half lighthouse image */
+.extra2 {
+	background: transparent url(./assets/Lighthouse.png) no-repeat; 
+	position: absolute;
+	border-radius: 20px 20px 20px 20px;
+	padding-top: 450px;
+	top: 1080px; 
+	left: 112px; 
+	width: 1200px; 
+	height: 110px;	
+	}
+
+/* HTML5 image */
+.extra3 {
+	background: transparent url(./assets/html5.png) no-repeat; 
+	position: absolute;
+	padding-top: 450px;
+	top: 1950px; 
+	left: 142px; 
+	width: 1200px; 
+	height: 110px;	
+	}
+
+/* CSS3 image */
+.extra4 {
+	background: transparent url(./assets/css3.png) no-repeat; 
+	position: absolute;
+	padding-top: 450px;
+	top: 1950px; 
+	left: 378px; 
+	width: 1200px; 
+	height: 110px;	
+	}
+
+/* GITHUB image */
+.extra5 {
+	background: transparent url(./assets/GH.png) no-repeat; 
+	position: absolute;
+	padding-top: 450px;
+	top: 1950px; 
+	left: 1062px; 
+	width: 1200px; 
+	height: 110px;	
+	}
